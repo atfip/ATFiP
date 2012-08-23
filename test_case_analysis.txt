@@ -1,0 +1,61 @@
+zentao smoking test
+1.login as correct user
+	goto login page (login page)
+	input username and password then login (login page)
+		goto login page
+		input username
+		input password
+		click login button
+		confirm user id (at home page)
+		pass or failed
+	comfirm login succeed (home page)
+		user info is right - who am i?
+		user Authorization - what can i do? include data and Permission
+2.project mgt.
+	(1) add project
+		goto home and login(login page)
+		goto project home page(home page)
+		add project (project home page)
+			confirm that if project home is loaded
+			add project	
+		fullfill all info and save it (project detail info page)
+			confirm that if project detail page is loaded
+			fullfill all items and save it
+		confirm saved succeed (project home page and project detail info page)
+			goto project home page
+			find special project
+			confirm the all item is rigth
+	(2) edit project info
+		goto home and login(login page)
+			goto home page
+				confirm home page
+			do login
+				input username
+				input password
+				login
+			confirm login succeed
+				get user id
+		goto project home page(home page)
+		find project (project home page)
+		edit project (project home page)
+		change some items and save it (project detail info page)
+		confirm saved succeed (project home page and project detail info page)
+    (3)delete project
+        find story by name
+        delete story by name
+        
+    (4)add story
+    (5)modify story
+    (6)delete story
+    (7)add plan
+    (8)modify plan
+    (9)delete plan
+    (10)关联需求
+3.task mgt.
+	(1) add task
+		goto home and login(login page)
+		goto project home page(project home page)
+		add task (project home page)
+		
+	(2) edit task info
+	(3) make task finished
