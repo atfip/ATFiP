@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>test_runner</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >ATFiP</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;test_runner
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="test_runner-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="test_runner-module.html">Module test_runner</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-comment">#coding=utf-8</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-comment"># &#23548;&#20837; unittest &#27979;&#35797;&#29992;&#20363;&#31649;&#29702;&#27169;&#22359;</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">unittest</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Module config=config-module.html"><a title="config" class="py-name" href="#" onclick="return doclink('link-0', 'config', 'link-0');">config</a></tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-1" class="py-name" targets="Package lib=lib-module.html"><a title="lib" class="py-name" href="#" onclick="return doclink('link-1', 'lib', 'link-1');">lib</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Module lib.HTMLTestRunner=lib.HTMLTestRunner-module.html,Class lib.HTMLTestRunner.HTMLTestRunner=lib.HTMLTestRunner.HTMLTestRunner-class.html"><a title="lib.HTMLTestRunner
+lib.HTMLTestRunner.HTMLTestRunner" class="py-name" href="#" onclick="return doclink('link-2', 'HTMLTestRunner', 'link-2');">HTMLTestRunner</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name"><a title="lib.HTMLTestRunner
+lib.HTMLTestRunner.HTMLTestRunner" class="py-name" href="#" onclick="return doclink('link-3', 'HTMLTestRunner', 'link-2');">HTMLTestRunner</a></tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-comment"># &#23548;&#20837;&#38656;&#35201;&#25191;&#34892;&#30340;&#27979;&#35797;&#29992;&#20363;&#38598;</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-4" class="py-name" targets="Module test_suite=test_suite-module.html"><a title="test_suite" class="py-name" href="#" onclick="return doclink('link-4', 'test_suite', 'link-4');">test_suite</a></tt> <tt class="py-keyword">import</tt> <tt id="link-5" class="py-name" targets="Function test_suite.ts_all_test()=test_suite-module.html#ts_all_test"><a title="test_suite.ts_all_test" class="py-name" href="#" onclick="return doclink('link-5', 'ts_all_test', 'link-5');">ts_all_test</a></tt><tt class="py-op">,</tt> <tt id="link-6" class="py-name" targets="Function test_suite.ts_smoking_test()=test_suite-module.html#ts_smoking_test"><a title="test_suite.ts_smoking_test" class="py-name" href="#" onclick="return doclink('link-6', 'ts_smoking_test', 'link-6');">ts_smoking_test</a></tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-comment"># &#21487;&#20197;&#22312;&#36816;&#34892;&#21069;&#35774;&#23450;&#32479;&#19968;&#30340;&#20840;&#23616;&#27983;&#35272;&#22120;&#31867;&#22411;&#35774;&#32622;, &#22914;&#26524;&#19981;&#25351;&#23450;, &#21017;&#20197; test suite &#20013;&#30340;&#37197;&#32622;&#20026;&#20934;</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-comment">#~ config.final_browser_tyep = "Chrome"</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-comment"># &#23450;&#20041;&#32479;&#19968;&#30340;&#27979;&#35797;&#25191;&#34892;&#26041;&#27861;&#65292;&#24182;&#20256;&#20837;&#25171;&#21253;&#22909;&#30340; test suite</tt> </tt>
+<a name="run_test"></a><div id="run_test-def"><a name="L18"></a><tt class="py-lineno">18</tt> <a class="py-toggle" href="#" id="run_test-toggle" onclick="return toggle('run_test');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="test_runner-module.html#run_test">run_test</a><tt class="py-op">(</tt><tt class="py-param">test_suite</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="run_test-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="run_test-expanded"><a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">    <tt class="py-keyword">with</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">"./report/my_report.html"</tt><tt class="py-op">,</tt> <tt class="py-string">"wb"</tt><tt class="py-op">)</tt> <tt class="py-keyword">as</tt> <tt class="py-name">f</tt><tt class="py-op">:</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">        <tt class="py-name">runner</tt> <tt class="py-op">=</tt> <tt id="link-7" class="py-name"><a title="lib.HTMLTestRunner
+lib.HTMLTestRunner.HTMLTestRunner" class="py-name" href="#" onclick="return doclink('link-7', 'HTMLTestRunner', 'link-2');">HTMLTestRunner</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">                    <tt class="py-name">stream</tt><tt class="py-op">=</tt><tt class="py-name">f</tt><tt class="py-op">,</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">                    <tt class="py-name">verbosity</tt><tt class="py-op">=</tt><tt class="py-number">2</tt><tt class="py-op">,</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">                    <tt id="link-8" class="py-name" targets="Variable sites.base_page.BasePage.title=sites.base_page.BasePage-class.html#title"><a title="sites.base_page.BasePage.title" class="py-name" href="#" onclick="return doclink('link-8', 'title', 'link-8');">title</a></tt><tt class="py-op">=</tt><tt class="py-string">'My test'</tt><tt class="py-op">,</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">                    <tt class="py-name">description</tt><tt class="py-op">=</tt><tt class="py-string">'This demonstrates the report output by HTMLTestRunner.'</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line">                    <tt class="py-op">)</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line">        <tt class="py-name">runner</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Method lib.HTMLTestRunner.HTMLTestRunner.run()=lib.HTMLTestRunner.HTMLTestRunner-class.html#run"><a title="lib.HTMLTestRunner.HTMLTestRunner.run" class="py-name" href="#" onclick="return doclink('link-9', 'run', 'link-9');">run</a></tt><tt class="py-op">(</tt><tt id="link-10" class="py-name"><a title="test_suite" class="py-name" href="#" onclick="return doclink('link-10', 'test_suite', 'link-4');">test_suite</a></tt><tt class="py-op">)</tt> </tt>
+</div><a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">     </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"><tt class="py-comment"># &#25191;&#34892;&#27979;&#35797;&#29992;&#20363;</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"><tt class="py-keyword">if</tt> <tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">'__main__'</tt><tt class="py-op">:</tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">    <tt id="link-11" class="py-name" targets="Function test_runner.run_test()=test_runner-module.html#run_test"><a title="test_runner.run_test" class="py-name" href="#" onclick="return doclink('link-11', 'run_test', 'link-11');">run_test</a></tt><tt class="py-op">(</tt><tt id="link-12" class="py-name"><a title="test_suite.ts_smoking_test" class="py-name" href="#" onclick="return doclink('link-12', 'ts_smoking_test', 'link-6');">ts_smoking_test</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >ATFiP</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Aug 28 10:24:22 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

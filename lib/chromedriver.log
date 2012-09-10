@@ -1,0 +1,74 @@
+[0.000][INFO]:      ChromeDriver 23.0.1240.0 /home/jackei/git_repo/lib/chromedriver
+[0.826][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chromeOptions": {
+      "args": [  ],
+      "binary": "",
+      "extensions": [  ]
+   },
+   "javascriptEnabled": true,
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.827][INFO]:      Launching chrome: /opt/google/chrome/google-chrome --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --password-store=basic --ignore-certificate-errors about:blank
+[1.697][INFO]:      Connected to Chrome successfully. Version: 19.0.1084.56
+[1.812][FINE]:      Command received (/session/ddb0c24f51610372e6e77a6a45efddb9)
+[1.812][FINE]:      Command finished (/session/ddb0c24f51610372e6e77a6a45efddb9) with response {
+   "sessionId": "ddb0c24f51610372e6e77a6a45efddb9",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "linux",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "19.0.1084.56",
+      "webStorageEnabled": true
+   }
+}
+
+[1.869][FINE]:      Command received (/session/ddb0c24f51610372e6e77a6a45efddb9/timeouts/implicit_wait) with params {
+   "ms": 10000.0,
+   "sessionId": "ddb0c24f51610372e6e77a6a45efddb9"
+}
+
+[1.869][FINER]:     Waiting for all views to stop loading...
+[1.870][FINER]:     Done waiting for all views to stop loading
+[1.870][FINER]:     Waiting for all views to stop loading...
+[1.870][FINER]:     Done waiting for all views to stop loading
+[1.870][FINE]:      Command finished (/session/ddb0c24f51610372e6e77a6a45efddb9/timeouts/implicit_wait) with response {
+   "sessionId": "ddb0c24f51610372e6e77a6a45efddb9",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[1.871][FINE]:      Command received (/session/ddb0c24f51610372e6e77a6a45efddb9/window/current/maximize) with params {
+   "sessionId": "ddb0c24f51610372e6e77a6a45efddb9",
+   "windowHandle": "current"
+}
+
+[1.871][FINER]:     Waiting for all views to stop loading...
+[1.871][FINER]:     Done waiting for all views to stop loading
+[1.871][FINER]:     Waiting for all views to stop loading...
+[1.872][FINER]:     Done waiting for all views to stop loading
+[1.872][WARNING]:   Command finished (/session/ddb0c24f51610372e6e77a6a45efddb9/window/current/maximize) with response {
+   "sessionId": "ddb0c24f51610372e6e77a6a45efddb9",
+   "status": 13,
+   "value": {
+      "message": "Maximize automation interface is not supported for this version of Chrome."
+   }
+}
+

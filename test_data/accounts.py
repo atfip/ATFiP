@@ -24,7 +24,7 @@ dev_usr.password = "dev_password"
 
 test_usr = Account()
 test_usr.username = "tester"
-test_usr.password = "test_password"
+test_usr.password = "wrong_password"
 
 if __name__ == "__main__":
     print super_usr.username, super_usr.password

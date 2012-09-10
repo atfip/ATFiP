@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>lib.HTMLTestRunner.Template_mixin</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >ATFiP</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="lib-module.html">Package&nbsp;lib</a> ::
+        <a href="lib.HTMLTestRunner-module.html">Module&nbsp;HTMLTestRunner</a> ::
+        Class&nbsp;Template_mixin
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="lib.HTMLTestRunner.Template_mixin-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Template_mixin</h1><p class="nomargin-top"><span class="codelink"><a href="lib.HTMLTestRunner-pysrc.html#Template_mixin">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+object --+
+         |
+        <strong class="uidshort">Template_mixin</strong>
+</pre>
+
+<dl><dt>Known Subclasses:</dt>
+<dd>
+      <ul class="subclass-list">
+<li><a href="lib.HTMLTestRunner.HTMLTestRunner-class.html">HTMLTestRunner</a></li>  </ul>
+</dd></dl>
+
+<hr />
+<p>Define a HTML template for report customerization and generation.</p>
+  <p>Overall structure of an HTML report</p>
+  <p>HTML +------------------------+ |&lt;html&gt;                  | |  
+  &lt;head&gt;                | |                        | |   STYLESHEET
+  | |   +----------------+   | |   |                |   | |   
+  +----------------+   | |                        | |  &lt;/head&gt;
+  | |                        | |  &lt;body&gt;                | |
+  | |   HEADING              | |   +----------------+   | |   |
+  |   | |   +----------------+   | |                        | |   REPORT
+  | |   +----------------+   | |   |                |   | |   
+  +----------------+   | |                        | |   ENDING
+  | |   +----------------+   | |   |                |   | |   
+  +----------------+   | |                        | |  &lt;/body&gt;
+  | |&lt;/html&gt;                 | +------------------------+</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__init__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="STATUS"></a><span class="summary-name">STATUS</span> = <code title="{0: 'pass', 1: 'fail', 2: 'error'}"><code class="variable-group">{</code>0<code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">pass</code><code class="variable-quote">'</code><code class="variable-op">, </code>1<code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">fail</code><code class="variable-quote">'</code><code class="variable-op">, </code>2<code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">error</code><code class="variable-quote">'</code><code class="variable-group">}</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DEFAULT_TITLE"></a><span class="summary-name">DEFAULT_TITLE</span> = <code title="'Unit Test Report'"><code class="variable-quote">'</code><code class="variable-string">Unit Test Report</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DEFAULT_DESCRIPTION"></a><span class="summary-name">DEFAULT_DESCRIPTION</span> = <code title="''"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#HTML_TMPL" class="summary-name">HTML_TMPL</a> = <code title="'''&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w\
+3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;%(title)s&lt;/title&gt;
+    &lt;meta name=&quot;generator&quot; content=&quot;%(generator)s&quot;/&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;\
+..."><code class="variable-quote">'</code><code class="variable-string">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;!DOCTYPE</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#STYLESHEET_TMPL" class="summary-name">STYLESHEET_TMPL</a> = <code title="'''
+&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+body        { font-family: verdana, arial, helvetica, sans-serif; font\
+-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading --------------------------------------------------------\
+..."><code class="variable-quote">'</code><code class="variable-string">\n&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;\nb</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#HEADING_TMPL" class="summary-name">HEADING_TMPL</a> = <code title="'''&lt;div class=\'heading\'&gt;
+&lt;h1&gt;%(title)s&lt;/h1&gt;
+%(parameters)s
+&lt;p class=\'description\'&gt;%(description)s&lt;/p&gt;
+&lt;/div&gt;
+
+'''"><code class="variable-quote">'</code><code class="variable-string">&lt;div class=\'heading\'&gt;\n&lt;h1&gt;%(title)s&lt;/h1&gt;\n%</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#HEADING_ATTRIBUTE_TMPL" class="summary-name">HEADING_ATTRIBUTE_TMPL</a> = <code title="'''&lt;p class=\'attribute\'&gt;&lt;strong&gt;%(name)s:&lt;/strong&gt; %(value)s&lt;/p&gt;
+'''"><code class="variable-quote">'</code><code class="variable-string">&lt;p class=\'attribute\'&gt;&lt;strong&gt;%(nam</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#REPORT_TMPL" class="summary-name">REPORT_TMPL</a> = <code title="'''
+&lt;p id=\'show_detail_line\'&gt;Show
+&lt;a href=\'javascript:showCase(0)\'&gt;Summary&lt;/a&gt;
+&lt;a href=\'javascript:showCase(1)\'&gt;Failed&lt;/a&gt;
+&lt;a href=\'javascript:showCase(2)\'&gt;All&lt;/a&gt;
+&lt;/p&gt;
+&lt;table id=\'result_table\'&gt;
+&lt;colgroup&gt;
+..."><code class="variable-quote">'</code><code class="variable-string">\n&lt;p id=\'show_detail_line\'&gt;Show\n&lt;a href=\'ja</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#REPORT_CLASS_TMPL" class="summary-name">REPORT_CLASS_TMPL</a> = <code title="'''
+&lt;tr class=\'%(style)s\'&gt;
+    &lt;td&gt;%(desc)s&lt;/td&gt;
+    &lt;td&gt;%(count)s&lt;/td&gt;
+    &lt;td&gt;%(Pass)s&lt;/td&gt;
+    &lt;td&gt;%(fail)s&lt;/td&gt;
+    &lt;td&gt;%(error)s&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;javascript:showClassDetail(\'%(cid)s\',%(count)s)&quot;&gt;De\
+..."><code class="variable-quote">'</code><code class="variable-string">\n&lt;tr class=\'%(style)s\'&gt;\n    &lt;td&gt;%(des</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#REPORT_TEST_WITH_OUTPUT_TMPL" class="summary-name">REPORT_TEST_WITH_OUTPUT_TMPL</a> = <code title="'''
+&lt;tr id=\'%(tid)s\' class=\'%(Class)s\'&gt;
+    &lt;td class=\'%(style)s\'&gt;&lt;div class=\'testcase\'&gt;%(desc)s&lt;/div&gt;&lt;/td\
+&gt;
+    &lt;td colspan=\'5\' align=\'center\'&gt;
+
+    &lt;!--css div popup start--&gt;
+    &lt;a class=&quot;popup_link&quot; onfocus=\'this.blur();\' href=&quot;javascript:sh\
+..."><code class="variable-quote">'</code><code class="variable-string">\n&lt;tr id=\'%(tid)s\' class=\'%</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="lib.HTMLTestRunner.Template_mixin-class.html#REPORT_TEST_NO_OUTPUT_TMPL" class="summary-name">REPORT_TEST_NO_OUTPUT_TMPL</a> = <code title="'''
+&lt;tr id=\'%(tid)s\' class=\'%(Class)s\'&gt;
+    &lt;td class=\'%(style)s\'&gt;&lt;div class=\'testcase\'&gt;%(desc)s&lt;/div&gt;&lt;/td\
+&gt;
+    &lt;td colspan=\'5\' align=\'center\'&gt;%(status)s&lt;/td&gt;
+&lt;/tr&gt;
+'''"><code class="variable-quote">'</code><code class="variable-string">\n&lt;tr id=\'%(tid)s\' class=\'%(C</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="REPORT_TEST_OUTPUT_TMPL"></a><span class="summary-name">REPORT_TEST_OUTPUT_TMPL</span> = <code title="'''
+%(id)s: %(output)s
+'''"><code class="variable-quote">'</code><code class="variable-string">\n%(id)s: %(output)s\n</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ENDING_TMPL"></a><span class="summary-name">ENDING_TMPL</span> = <code title="'&lt;div id=\'ending\'&gt;&amp;nbsp;&lt;/div&gt;'"><code class="variable-quote">'</code><code class="variable-string">&lt;div id=\'ending\'&gt;&amp;nbsp;&lt;/div&gt;</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLE DETAILS ==================== -->
+<a name="section-ClassVariableDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variable Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariableDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="HTML_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">HTML_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code>
+<code class="variable-string">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string">3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</code>
+<code class="variable-string">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</code>
+<code class="variable-string">&lt;head&gt;</code>
+<code class="variable-string">    &lt;title&gt;%(title)s&lt;/title&gt;</code>
+<code class="variable-string">    &lt;meta name=&quot;generator&quot; content=&quot;%(generator)s&quot;/&gt;</code>
+<code class="variable-string">    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="STYLESHEET_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">STYLESHEET_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string"></code>
+<code class="variable-string">&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;</code>
+<code class="variable-string">body        { font-family: verdana, arial, helvetica, sans-serif; font</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string">-size: 80%; }</code>
+<code class="variable-string">table       { font-size: 100%; }</code>
+<code class="variable-string">pre         { }</code>
+<code class="variable-string"></code>
+<code class="variable-string">/* -- heading --------------------------------------------------------</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="HEADING_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">HEADING_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string">&lt;div class=\'heading\'&gt;</code>
+<code class="variable-string">&lt;h1&gt;%(title)s&lt;/h1&gt;</code>
+<code class="variable-string">%(parameters)s</code>
+<code class="variable-string">&lt;p class=\'description\'&gt;%(description)s&lt;/p&gt;</code>
+<code class="variable-string">&lt;/div&gt;</code>
+<code class="variable-string"></code>
+<code class="variable-string"></code><code class="variable-quote">'''</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="HEADING_ATTRIBUTE_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">HEADING_ATTRIBUTE_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string">&lt;p class=\'attribute\'&gt;&lt;strong&gt;%(name)s:&lt;/strong&gt; %(value)s&lt;/p&gt;</code>
+<code class="variable-string"></code><code class="variable-quote">'''</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="REPORT_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">REPORT_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string"></code>
+<code class="variable-string">&lt;p id=\'show_detail_line\'&gt;Show</code>
+<code class="variable-string">&lt;a href=\'javascript:showCase(0)\'&gt;Summary&lt;/a&gt;</code>
+<code class="variable-string">&lt;a href=\'javascript:showCase(1)\'&gt;Failed&lt;/a&gt;</code>
+<code class="variable-string">&lt;a href=\'javascript:showCase(2)\'&gt;All&lt;/a&gt;</code>
+<code class="variable-string">&lt;/p&gt;</code>
+<code class="variable-string">&lt;table id=\'result_table\'&gt;</code>
+<code class="variable-string">&lt;colgroup&gt;</code>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="REPORT_CLASS_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">REPORT_CLASS_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string"></code>
+<code class="variable-string">&lt;tr class=\'%(style)s\'&gt;</code>
+<code class="variable-string">    &lt;td&gt;%(desc)s&lt;/td&gt;</code>
+<code class="variable-string">    &lt;td&gt;%(count)s&lt;/td&gt;</code>
+<code class="variable-string">    &lt;td&gt;%(Pass)s&lt;/td&gt;</code>
+<code class="variable-string">    &lt;td&gt;%(fail)s&lt;/td&gt;</code>
+<code class="variable-string">    &lt;td&gt;%(error)s&lt;/td&gt;</code>
+<code class="variable-string">    &lt;td&gt;&lt;a href=&quot;javascript:showClassDetail(\'%(cid)s\',%(count)s)&quot;&gt;De</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="REPORT_TEST_WITH_OUTPUT_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">REPORT_TEST_WITH_OUTPUT_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string"></code>
+<code class="variable-string">&lt;tr id=\'%(tid)s\' class=\'%(Class)s\'&gt;</code>
+<code class="variable-string">    &lt;td class=\'%(style)s\'&gt;&lt;div class=\'testcase\'&gt;%(desc)s&lt;/div&gt;&lt;/td</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string">&gt;</code>
+<code class="variable-string">    &lt;td colspan=\'5\' align=\'center\'&gt;</code>
+<code class="variable-string"></code>
+<code class="variable-string">    &lt;!--css div popup start--&gt;</code>
+<code class="variable-string">    &lt;a class=&quot;popup_link&quot; onfocus=\'this.blur();\' href=&quot;javascript:sh</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="REPORT_TEST_NO_OUTPUT_TMPL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">REPORT_TEST_NO_OUTPUT_TMPL</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-quote">'''</code><code class="variable-string"></code>
+<code class="variable-string">&lt;tr id=\'%(tid)s\' class=\'%(Class)s\'&gt;</code>
+<code class="variable-string">    &lt;td class=\'%(style)s\'&gt;&lt;div class=\'testcase\'&gt;%(desc)s&lt;/div&gt;&lt;/td</code><span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-string">&gt;</code>
+<code class="variable-string">    &lt;td colspan=\'5\' align=\'center\'&gt;%(status)s&lt;/td&gt;</code>
+<code class="variable-string">&lt;/tr&gt;</code>
+<code class="variable-string"></code><code class="variable-quote">'''</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >ATFiP</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Aug 28 10:24:22 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+ft1.1: before sys.stderr = stderr_redirector
+startTest step finished
+startTest finished.
+get test method...
+ready for create recorder.
+set rec_file_name value.
+create recorder.
+recorder created...
+Traceback (most recent call last):
+  File "C:\ATFiP\test_case\test_login.py", line 33, in setUp
+    start_browser()
+  File "C:\ATFiP\lib\utils_lib.py", line 30, in start_browser
+    start_browser_by_config(config.browser_type)
+  File "C:\ATFiP\lib\utils_lib.py", line 41, in start_browser_by_config
+    browser = webdriver.Firefox()
+  File "c:\python27\lib\site-packages\selenium-2.25.0-py2.7.egg\selenium\webdriver\firefox\webdriver.py", line 51, in __init__
+    self.binary, timeout),
+  File "c:\python27\lib\site-packages\selenium-2.25.0-py2.7.egg\selenium\webdriver\firefox\extension_connection.py", line 47, in __init__
+    self.binary.launch_browser(self.profile)
+  File "c:\python27\lib\site-packages\selenium-2.25.0-py2.7.egg\selenium\webdriver\firefox\firefox_binary.py", line 43, in launch_browser
+    self._start_from_profile_path(self.profile.path)
+  File "c:\python27\lib\site-packages\selenium-2.25.0-py2.7.egg\selenium\webdriver\firefox\firefox_binary.py", line 65, in _start_from_profile_path
+    env=self._firefox_env).communicate()
+  File "c:\python27\lib\subprocess.py", line 679, in __init__
+    errread, errwrite)
+  File "c:\python27\lib\subprocess.py", line 896, in _execute_child
+    startupinfo)
+WindowsError: [Error 3] 
+
+
