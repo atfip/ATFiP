@@ -16,4 +16,4 @@ def main():
 
 # 执行测试用例
 if __name__ == '__main__':
-	run_test(ts_smoking_test(), get_object_name(ts_smoking_test, globals()), True)
+	run_test(ts_smoking_test(), get_object_name(ts_smoking_test, globals()))

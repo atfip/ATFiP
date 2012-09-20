@@ -63,7 +63,7 @@ def stop_browser():
     global_vars.browser.quit()
 
 
-def run_test(test_suite, test_suite_name, rec=False):
+def run_test(test_suite, test_suite_name):
     """执行所有给定的 test suite/test case，并生成和通过邮件发送测试报告。
     Args: 
         test_suite: 需要执行的所有 test case 的集合
@@ -129,7 +129,11 @@ def send_report_after_ran_test():
         + os.path.split(config.report_dir)[1] + '/summary_report.html'
     print_debug_info("the report's url is: " + url)
     # attach html report to email content
-    report_content = MIMEText(urllib2.urlopen(url).read().decode('utf-8'), 'html')
+    try:
+        report_content = MIMEText(urllib2.urlopen(url).read().decode('utf-8'), 'html')
+    except Exception, e:
+        print_debug_info("please check your http server setting or status.")
+        raise e
     msg.attach(report_content)
     print_debug_info("report attached.")
     # connect email server and send report
@@ -142,6 +146,7 @@ def send_report_after_ran_test():
         print_debug_info("report has already sent.")
         smtp.quit()
     except Exception, e:
+        print_debug_info("please check your config.email setting.")
         raise e
 
 
@@ -169,7 +174,7 @@ def start_record(recorder):
     Raise: Exception.
     """
     try:
-        time.sleep(2)
+        time.sleep(2)   # 在开始录制前暂停2秒，确保环境初始化已经完成
         recorder.start()
         print_debug_info("record started.")
     except Exception, e:
@@ -183,7 +188,7 @@ def stop_record(recorder):
     Raise: Exception.
     """
     try:
-        time.sleep(2)
+        time.sleep(2)   # 在开始录制前暂停2秒，确保所有操作已经完成
         recorder.stop()
         print_debug_info("record stopped.")
     except Exception, e:
@@ -196,7 +201,8 @@ def print_debug_info(info):
 
 
 def dropbox_select_by_value(select_object, text):
-    """ select and change current project/product/other. just only for Zentao.
+    """ 本 function 仅仅适用与禅道中的下拉列表，用于处理类似 {"a:atfip", "b:boy", "c:cat"} 情况下
+        下拉列表项的选定。一般情况下可以直接使用 select_list.select_by_visible_text(itme_value)。
     args: 
         select_object: selenium Select 对象实例, 一个包含一到多个选项的下拉列表
         text: 根据 text 值来选定某个具体的选项
